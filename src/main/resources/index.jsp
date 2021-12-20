@@ -9,9 +9,7 @@
     <body>
         <h2>|非闲置进程列表|CPU占用前三|内存占用前三|</h2>
         <%
-            response.setIntHeader("Refresh", 5);
-            ShellRet ret = new ShellRunner().run("top -b -n 1", new TopProcessor("<br>"));
-            out.println(ret.getRet());
+            out.println("hello,world!");
         %>
     </body>
 </html>
